@@ -23,23 +23,41 @@ for(var i = 0; i < text.length; i++) {
 text();
 */
 
-function mousebtn() {
+function mousebtn(event) {
+  /*
   document.getElementsByClassName("tindog")[0].style.filter = "blur(4px)";
   document.getElementsByClassName("visitbtn")[0].style.display = "block";
   document.getElementsByClassName("simon-game")[0].style.filter = "blur(4px)";
   document.getElementsByClassName("visitbtn1")[0].style.display = "block";
   document.getElementsByClassName("RCG")[0].style.filter = "blur(4px)";
   document.getElementsByClassName("visitbtn2")[0].style.display = "block";
+*/
+  if (!event) {
+    return;
+  }
+  event.target.closest(".contents").querySelector(".imgss").style.filter =
+    "blur(4px)";
+  event.target.closest(".contents").querySelector(".img-btn").style.display =
+    "block";
 
   console.log("212");
 }
-function mouseout() {
+function mouseout(event) {
+  /*
   document.getElementsByClassName("tindog")[0].style.filter = "blur(0)";
   document.getElementsByClassName("visitbtn")[0].style.display = "none";
   document.getElementsByClassName("simon-game")[0].style.filter = "blur(0)";
   document.getElementsByClassName("visitbtn1")[0].style.display = "none";
   document.getElementsByClassName("RCG")[0].style.filter = "blur(0)";
   document.getElementsByClassName("visitbtn2")[0].style.display = "none";
+  */
+  if (!event) {
+    return;
+  }
+  event.target.closest(".contents").querySelector(".imgss").style.filter =
+    "blur(0)";
+  event.target.closest(".contents").querySelector(".img-btn").style.display =
+    "none";
   console.log("212");
 }
 
@@ -76,7 +94,7 @@ const reverseLoop = () => {
   }, 150);
 };
 
-forwardLoop();
+//forwardLoop();
 
 const Star = function (x, y, z) {
   this.x = x;
@@ -145,7 +163,6 @@ function loop() {
 }
 
 loop();
-
 //
 //var canvas=document.querySelector('canvas');
 //canvas.width=window.innerWidth;
