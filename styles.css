@@ -1,18 +1,18 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: content-box;
-  font-family: 'poppins',sans-serif;
+  font-family: "poppins", sans-serif;
 }
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   min-height: 100vh;
   background: black;
 }
-h2[id=name]::after {
+h2[id="name"]::after {
   content: "|";
   animation: blink 1s steps(5, start) infinite;
   margin-left: 0;
@@ -29,39 +29,34 @@ h2[id=name]::after {
     visibility: hidden;
   }
 }
-h2{
-    position:absolute ;
-    top:40%;
-    width:100%;
-	  font-family: 'Dancing Script', cursive;
-    font-size:4em;
-    text-align:center;
-    transform:translate ;
-    color:#fff;
-
+h2 {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  font-family: "Dancing Script", cursive;
+  font-size: 4em;
+  text-align: center;
+  transform: translate;
+  color: #fff;
 }
-
 
 /*About Me, Skills, Social*/
 img {
   vertical-align: middle;
   border-style: none;
   display: inline;
-
 }
 .icon {
+  display: inline;
 
-
-  display:inline;
-
-  border-style:dashed;
+  border-style: dashed;
   border-width: 1px;
-  float:left;
+  float: left;
 }
 
-.profile-image{
+.profile-image {
   position: relative;
-  margin-bottom:50px;
+  margin-bottom: 50px;
   width: 50%;
   margin-left: 30px;
   float: inline-start;
@@ -70,19 +65,18 @@ img {
 
   background: #080808;
   box-shadow: 5px 5px 10px #030303, -5px -5px 10px #0d0d0d;
-    border: white 4px solid;
-    animation: darkmode 1.5s forwards;
+  border: white 4px solid;
+  animation: darkmode 1.5s forwards;
 }
 
-
-.top{
-height:100%;
-width:100%;
-margin-bottom: 100px;
-     background:radial-gradient(#333,#000);
+.top {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 100px;
+  background: radial-gradient(#333, #000);
 }
 
-.container{
+.container {
   margin-bottom: 100px;
 
   display: flex;
@@ -92,30 +86,27 @@ margin-bottom: 100px;
 
   margin: 40px 0;
 }
-.container .card{
-
+.container .card {
   position: relative;
   min-width: 320px;
   height: 480px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-              inset -5px -5px 15px rgba(0, 0, 0, 0.1),
-              5px 5px 15px rgba(0, 0, 0, 3),
-              -5px -5px 15px rgba(255,255,255,0.1);
-border-radius: 15px;
-margin: 30px;
+    inset -5px -5px 15px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
 }
 
-
-.container .card .box{
+.container .card .box {
   position: absolute;
-  top:20px;
-  left:20px;
-  right:20px;
+  top: 20px;
+  left: 20px;
+  right: 20px;
   bottom: 20px;
   background: black;
   border: 2px solid #1e1f23;
   border-radius: 15px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   transition: 0.5%;
   display: flex;
   justify-content: center;
@@ -123,18 +114,17 @@ margin: 30px;
   overflow: hidden;
 }
 
-.container .card .box:hover{
-
+.container .card .box:hover {
   transform: translateY(-50px);
   box-shadow: 0 40px 70px #27282e;
 }
-.container .card .box .content{
-  padding:20px;
+.container .card .box .content {
+  padding: 20px;
   text-align: center;
   width: 100%;
 }
 
-.container .card .box .content h3{
+.container .card .box .content h3 {
   position: absolute;
   top: 5px;
   right: 65px;
@@ -142,14 +132,14 @@ margin: 30px;
   color: white;
 }
 
-.container .card .box .content .Skill{
+.container .card .box .content .Skill {
   position: absolute;
   top: 5px;
 
   font-size: 2em;
   color: white;
 }
-.container .card .box .content .Social{
+.container .card .box .content .Social {
   position: absolute;
   top: 5px;
 
@@ -157,8 +147,7 @@ margin: 30px;
   color: white;
 }
 
-.container .card .box .content p
-{
+.container .card .box .content p {
   position: relative;
 
   font-size: 16px;
@@ -167,29 +156,29 @@ margin: 30px;
   z-index: 1;
   transition: 0.5%;
 }
-.container .card .box .content .Social .title{
+.container .card .box .content .Social .title {
   position: relative;
   text-align: center;
   width: 100%;
   font-size: 30px;
   color: white;
 }
-.container .card .box .content .Skill .title{
+.container .card .box .content .Skill .title {
   position: relative;
   text-align: center;
   width: 100%;
   font-size: 30px;
   color: white;
 }
-.container .card .box .content .Social .title img{
+.container .card .box .content .Social .title img {
   margin-left: 10px;
 }
-.container .card .box .content .Skill .title img{
+.container .card .box .content .Skill .title img {
   margin-left: 10px;
   width: 30px;
   height: 30px;
 }
-.flex-icon{
+.flex-icon {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -197,99 +186,109 @@ margin: 30px;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
- .flex-icon .icon img{
-width: 60px;
-height: 60px;
-border-radius: 30px;
+.flex-icon1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
-.container .card .box .content .contact-form-btn{
+.flex-icon1 img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.flex-icon .icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.container .card .box .content .contact-form-btn {
   margin-top: 10px;
   position: relative;
-  padding:10px;
+  padding: 10px;
   justify-content: center;
   cursor: pointer;
   float: inherit;
-  background: #008E89;
+  background: #008e89;
 }
-.container .card .box .content .contact-form-btn:hover{
+.container .card .box .content .contact-form-btn:hover {
   background: #3e69c3;
 }
 
-
-
-
-
-
 /*Projects*/
-.title{
+.title {
   width: 100%;
   font-weight: 600;
   font-size: 2em;
   text-align: center;
   margin-bottom: 20px;
 }
-.containers .title h3{
+.containers .title h3 {
   display: inline;
   position: relative;
   margin-bottom: 10px;
-  width:100%;
+  width: 100%;
   text-align: center;
   font-size: 1.6em;
-  transform:translate ;
+  transform: translate;
   color: white;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
-.tindog,.simon-game,.RCG{
-width: 500px;
-height: 500px;
+.tindog,
+.simon-game,
+.RCG {
+  width: 500px;
+  height: 500px;
 }
-.tindog:hover,.simon-game:hover,.RCG{
+.tindog:hover,
+.simon-game:hover,
+.RCG {
   filter: blur(3px);
 }
-
-.btn{
-
+.icon-name {
+  color: white;
 }
 
- .visitbtn,.visitbtn1,.visitbtn2{
-   display: none;
-   left: 40%;
-position: absolute;
-width: 100px;
-font-size: 1.5rem;
-padding: 10px; ;
-height: 40px;
-bottom: 45%;
-z-index: 999;
-cursor: pointer;
-font-weight: 400;
-color: #fff;
- background-color: black;
-border-color: white;
+.visitbtn,
+.visitbtn1,
+.visitbtn2 {
+  display: none;
+  left: 40%;
+  position: absolute;
+  width: 100px;
+  font-size: 1.5rem;
+  padding: 10px;
+  height: 40px;
+  bottom: 45%;
+  z-index: 999;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  background-color: black;
+  border: 3px solid #fff;
 
-border-radius: 0.5rem;
-
+  border-radius: 0.5rem;
 }
-.visitbtn:hover{
+.visitbtn:hover {
   background: #ff4c68;
 }
-.visitbtn1:hover{
-  background: #011F3F;
+.visitbtn1:hover {
+  background: #011f3f;
 }
-.visitbtn2:hover{
+.visitbtn2:hover {
   background: rgb(60, 236, 195);
 }
 
-
-
-.top{
-height:100%;
-width:100%;
-margin-bottom: 100px;
-     background:radial-gradient(#333,#000);
+.top {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 100px;
+  background: radial-gradient(#333, #000);
 }
 
-.containers{
+.containers {
   margin-bottom: 100px;
 
   display: flex;
@@ -299,31 +298,28 @@ margin-bottom: 100px;
 
   margin: 40px 0;
 }
-.containers .cards{
-
+.containers .cards {
   position: relative;
   margin-right: auto;
   min-width: 550px;
   height: 450px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-              inset -5px -5px 15px rgba(0, 0, 0, 0.1),
-              5px 5px 15px rgba(0, 0, 0, 3),
-              -5px -5px 15px rgba(255,255,255,0.1);
-border-radius: 15px;
-margin: 30px;
+    inset -5px -5px 15px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 3),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
 }
 
-
-.containers .cards .boxs{
+.containers .cards .boxs {
   position: absolute;
-  top:20px;
-  left:20px;
-  right:20px;
+  top: 20px;
+  left: 20px;
+  right: 20px;
   bottom: 20px;
   background: black;
   border: 2px solid #1e1f23;
   border-radius: 15px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   transition: 0.5%;
   display: flex;
   justify-content: center;
@@ -331,43 +327,46 @@ margin: 30px;
   overflow: hidden;
 }
 
-.containers .cards .boxs:hover{
-
+.containers .cards .boxs:hover {
   transform: translateY(-50px);
   box-shadow: 0 40px 70px #27282e;
 }
-.containers .cards .boxs .contents{
-
+.containers .cards .boxs .contents .visitcard .tindog:hover {
+  opacity: 0.3;
+}
+.containers .cards .boxs .contents .visitcard .simon-game:hover {
+  opacity: 0.3;
+}
+.containers .cards .boxs .contents .visitcard .RCG:hover {
+  opacity: 1;
+}
+.containers .cards .boxs .contents {
   position: relative;
-  padding:20px;
+  padding: 20px;
   text-align: center;
 }
 
-.containers .cards .boxs.contents h3{
+.containers .cards .boxs.contents h3 {
   position: absolute;
   top: 5px;
   right: 75px;
   font-size: 2em;
   color: white;
 }
-.containers .cards .boxs .contents .Skill{
-
+.containers .cards .boxs .contents .Skill {
   top: 5px;
   right: 100px;
   font-size: 2em;
   color: white;
 }
-.containers .cards .boxs .contents .Social{
-
+.containers .cards .boxs .contents .Social {
   top: 5px;
   right: 100px;
   font-size: 2em;
   color: white;
 }
 
-
-.containers .cards .boxs .contents p
-{
+.containers .cards .boxs .contents p {
   font-size: 16px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
@@ -375,34 +374,31 @@ margin: 30px;
   transition: 0.5%;
 }
 
-
-
-
 /*Contact Me*/
-.contact-section .title h3{
+.contact-section .title h3 {
   display: inline;
   position: relative;
   margin-bottom: 10px;
-  width:100%;
+  width: 100%;
   text-align: center;
   font-size: 1.6em;
-  transform:translate ;
+  transform: translate;
   color: white;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
-.contact-section{
-  background: black ;
+.contact-section {
+  background: black;
   background-size: cover;
-  padding:40px 0 ;
+  padding: 40px 0;
 }
-.contact-form{
-  min-width:  600px;
+.contact-form {
+  min-width: 600px;
   margin: auto;
   padding: 0 10px;
   overflow: hidden;
 }
-.contact-form-text{
+.contact-form-text {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -414,17 +410,17 @@ margin: 30px;
   color: white;
   transition: 0.5s;
 }
-.contact-form-text:hover{
+.contact-form-text:hover {
   box-shadow: 0 0 10px 4px #34495e;
 }
-textarea .contact-form-text{
+textarea .contact-form-text {
   resize: none;
   height: 120px;
 }
-.contact-form-btn{
+.contact-form-btn {
   float: right;
-  border: #65C18C;
-  cursor:pointer;
+  border: #65c18c;
+  cursor: pointer;
   text-align: center;
   outline: none;
 
@@ -435,94 +431,6 @@ textarea .contact-form-text{
   border-radius: 20px;
   transition: 1s;
 }
-.contact-form-btn:hover{
-  background: #65C18C;
-}
-
-/*Projects
-.boxs{
-  position: relative;
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: cente
-  margin: 40px;
-  transition: 0.5s;
-}
-.boxs:hover{
-  height: 400px;
-}
-.boxs .imgBx{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:100%;
-  height: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-.boxs .imgBx img{
-  max-width: 100%;
-  opacity: 0.1;
-  transition: 0.5s;
-}
-.boxs:hover .imgBx img{
-  opacity: 1;
-}
-.boxs:before{
-  content: '';
-  position: absolute;;
-  top:-2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background:white;
-  z-index: -1;
-}
-.boxs:after{
-  content: '';
-  position: absolute;;
-  top:-2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: #27282e;
-  z-index: -1;
-  filter:blur(40px);
-}
-
-.boxs .contents{
-  position: absolute;
-  bottom: 0;
-  left:10px;
-  right:10px;
-  bottom:10px;
-  height:90px;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  opacity: 0;
-  transition: 0.5s;
-}
-.boxs:hover .contents{
-  opacity: 1;
-}
-.boxs .contents h3{
-  font-size: 20px;
-  color: white;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 1px;
-
-}
-.boxs .contents h3 span{
-  font-size: 14px;
-  color: white;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 2px;
-
+.contact-form-btn:hover {
+  background: #65c18c;
 }
