@@ -74,6 +74,7 @@ img {
   width: 100%;
   margin-bottom: 100px;
   background: radial-gradient(#333, #000);
+  display: flex;
 }
 
 .container {
