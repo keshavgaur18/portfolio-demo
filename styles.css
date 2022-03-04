@@ -29,10 +29,7 @@ h2[id="name"]::after {
     visibility: hidden;
   }
 }
-.root{
- display:flex;
- align-items: center; 
-}
+
 h2 {
   position: absolute;
   top: 40%;
