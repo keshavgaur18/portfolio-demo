@@ -255,15 +255,27 @@ img {
   color: white;
   font-family: "Dancing Script", cursive;
 }
-.tindog,
+.project-name {
+  color: white;
+}
+.tindog {
+  width: 700px;
+  height: 750px;
+  object-fit: contain;
+}
 .simon-game,
-.RCG {
-  width: 500px;
-  height: 500px;
+.RCG,
+.todo,
+.weather {
+  width: 800px;
+  height: 800px;
+  object-fit: contain;
 }
 .tindog:hover,
 .simon-game:hover,
-.RCG {
+.RCG:hover,
+.todo:hover,
+.weather:hover {
   filter: blur(3px);
 }
 .icon-name {
@@ -272,7 +284,9 @@ img {
 
 .visitbtn,
 .visitbtn1,
-.visitbtn2 {
+.visitbtn2,
+.visitbtn3,
+.visitbtn4 {
   display: none;
   left: 40%;
   position: absolute;
@@ -298,6 +312,12 @@ img {
 }
 .visitbtn2:hover {
   background: rgb(60, 236, 195);
+}
+.visitbtn3:hover {
+  background: #fdcb6e;
+}
+.visitbtn4:hover {
+  background: #a64253;
 }
 
 .top {
@@ -357,6 +377,12 @@ img {
   opacity: 0.3;
 }
 .containers .cards .boxs .contents .visitcard .RCG:hover {
+  opacity: 0.3;
+}
+.containers .cards .boxs .contents .visitcard .todo:hover {
+  opacity: 0.3;
+}
+.containers .cards .boxs .contents .visitcard .weather:hover {
   opacity: 0.3;
 }
 .containers .cards .boxs .contents {
