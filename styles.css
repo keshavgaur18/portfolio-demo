@@ -266,7 +266,7 @@ img {
 .simon-game,
 .RCG,
 .todo,
-.weather {
+.news {
   width: 800px;
   height: 800px;
   object-fit: contain;
@@ -275,7 +275,7 @@ img {
 .simon-game:hover,
 .RCG:hover,
 .todo:hover,
-.weather:hover {
+.news:hover {
   filter: blur(3px);
 }
 .icon-name {
@@ -317,7 +317,7 @@ img {
   background: #fdcb6e;
 }
 .visitbtn4:hover {
-  background: #a64253;
+  background: #9242a6;
 }
 
 .top {
@@ -382,7 +382,7 @@ img {
 .containers .cards .boxs .contents .visitcard .todo:hover {
   opacity: 0.3;
 }
-.containers .cards .boxs .contents .visitcard .weather:hover {
+.containers .cards .boxs .contents .visitcard .news:hover {
   opacity: 0.3;
 }
 .containers .cards .boxs .contents {
